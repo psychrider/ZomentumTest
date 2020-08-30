@@ -1,0 +1,9 @@
+<h2><%=show[0].end%>select show and book your ticket...</h2>
+<form action="/ticket" method="POST">
+    name: <input type="text" name="name">
+    phone: <input type="number" size="15" name="phones">
+    start: <input type="datetime-local" name = "start" value = <%=show[0].start%>></br>
+    end:<input type="datetime-local" name = "end" value = <%=show[0].end %>></br>
+    <input type="submit">
+</form>
+</br><a href="/ticket">back</a>
